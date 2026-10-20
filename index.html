@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta
+      name="description"
+      content="Privacy Policy for Nexus Bridge, developed by MUSHROOM BUILD."
+    >
+    <title>Privacy Policy | Nexus Bridge</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.65;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        --page: #f4f7f7;
+        --surface: #ffffff;
+        --text: #172326;
+        --muted: #526367;
+        --accent: #00796b;
+        --border: #d9e3e3;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --page: #101819;
+          --surface: #182324;
+          --text: #edf4f3;
+          --muted: #b4c3c2;
+          --accent: #80cbc4;
+          --border: #344546;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--text);
+      }
+
+      header,
+      main,
+      footer {
+        width: min(100% - 32px, 820px);
+        margin-inline: auto;
+      }
+
+      header {
+        padding: 48px 0 24px;
+      }
+
+      .brand {
+        margin: 0 0 4px;
+        color: var(--accent);
+        font-size: 0.8rem;
+        font-weight: 750;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 7vw, 3.25rem);
+        line-height: 1.15;
+      }
+
+      .developer,
+      .updated {
+        color: var(--muted);
+      }
+
+      .developer {
+        margin: 10px 0 20px;
+      }
+
+      .updated {
+        font-size: 0.95rem;
+      }
+
+      main {
+        padding: 28px clamp(20px, 5vw, 44px);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        background: var(--surface);
+      }
+
+      section + section {
+        margin-top: 28px;
+        padding-top: 22px;
+        border-top: 1px solid var(--border);
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        font-size: 1.22rem;
+        line-height: 1.35;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        color: var(--accent);
+        overflow-wrap: anywhere;
+      }
+
+      .contact {
+        padding: 16px;
+        border-radius: 12px;
+        background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+      }
+
+      footer {
+        padding: 22px 0 40px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 480px) {
+        header {
+          padding-top: 32px;
+        }
+
+        main {
+          width: 100%;
+          border-inline: 0;
+          border-radius: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p class="brand">Nexus Bridge</p>
+      <h1>Privacy Policy</h1>
+      <p class="developer">Developed by MUSHROOM BUILD</p>
+      <p class="updated">Last updated: October 20, 2026</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>About this policy</h2>
+        <p>
+          Nexus Bridge is a file-management and device-to-device transfer app
+          developed by MUSHROOM BUILD. This policy describes the data handled
+          by the app and the choices available to you.
+        </p>
+      </section>
+
+      <section>
+        <h2>Files and storage</h2>
+        <p>
+          Nexus Bridge accesses files when you choose to browse, preview,
+          organize, archive, open, share, or transfer them. Android All files
+          access (Android 11 and newer) or legacy storage access (older Android
+          versions) enables shared-storage file management; declining it
+          leaves dependent features unavailable. Files received from Android
+          share actions and Nearby transfers are copied to a NexusBridge folder
+          in shared storage on Android, or app documents storage on other
+          supported platforms. These saved copies are not automatically deleted
+          when a server stops.
+        </p>
+      </section>
+
+      <section>
+        <h2>Camera and QR scanning</h2>
+        <p>
+          Camera access is requested when you choose QR scanning. The camera is
+          used to read the invitation on your device. If you decline camera
+          access, QR scanning is unavailable; you can still enter connection
+          details another way. The app does not save or upload camera images.
+        </p>
+      </section>
+
+      <section>
+        <h2>Network and transfers</h2>
+        <p>
+          You start network connections and choose the files and destinations.
+          FTP/FTPS client connections go to the server address you enter. Local
+          FTP and HTTP server features make selected files available to devices
+          that can reach your device on the chosen network. Nearby sharing uses
+          a temporary Wi-Fi hotspot on supported Android devices; its
+          invitation contains connection details and a temporary access token,
+          so share it only with intended recipients. Local network IP addresses
+          and file names may appear in transfer or server activity while the
+          app is running.
+        </p>
+      </section>
+
+      <section>
+        <h2>Encryption and authentication</h2>
+        <p>
+          FTP starts in ordinary FTP mode unless you select implicit FTPS;
+          ordinary FTP does not encrypt credentials or files, while FTPS
+          encrypts the connection. The Local HTTP server starts in HTTPS mode
+          by default and can be changed to unencrypted HTTP. Its HTTPS
+          certificate is self-signed, so browsers may show a trust warning.
+          Nearby transfers use HTTP and are not encrypted in transit by the
+          app. Unencrypted traffic may be observed by others with access to the
+          network. Use trusted networks and encrypted modes for sensitive data.
+          Saved FTP credentials and the HTTP username and password verifier use
+          platform secure storage. HTTP passwords are stored as a salted
+          PBKDF2-SHA256 verifier, not as the entered password. Anonymous server
+          access removes login protection; enable it only if intended.
+        </p>
+      </section>
+
+      <section>
+        <h2>Information stored on your device</h2>
+        <p>
+          App settings and preferences, including server options and up to ten
+          recent archive paths, are stored locally. Saved FTP credentials, the
+          HTTP username and password verifier, and the optional app-lock PIN
+          verifier are kept in platform secure storage; the app-lock PIN itself
+          is not saved as plain text. The app-lock verifier uses salted
+          PBKDF2-SHA256. The app does not provide biometric unlock in this
+          release. Clearing the app cache removes entries in the app cache and
+          cached images; it does not remove user files from shared storage or
+          necessarily remove temporary server-upload files. Resetting app
+          storage in Android Settings removes app-private settings and data,
+          but does not remove files saved in shared storage.
+        </p>
+      </section>
+
+      <section>
+        <h2>Retention and deletion</h2>
+        <p>
+          FTP/HTTP activity entries (including client IP addresses) are kept in
+          app memory, with up to 100 entries per server activity log. Nearby
+          transfer history is in memory and limited to 20 entries. HTTP chat
+          history is held in memory, up to 200 messages; stopping the server
+          does not necessarily clear this list, but ending the app process
+          does. Browser uploads and chat attachments are written under the
+          operating system temporary directory in
+          <code>nexus_bridge_browser_publish</code>. The app does not set a
+          deletion period or remove these files when the server stops, so they
+          may remain until removed by the operating system or app-data cleanup.
+          Files copied to shared storage remain until you delete them with a
+          file manager. These behaviors do not establish a guaranteed
+          retention period.
+        </p>
+      </section>
+
+      <section>
+        <h2>Third-party libraries and external services</h2>
+        <p>
+          The app uses Flutter packages for archives, FTP/FTPS, QR scanning,
+          media playback, file opening and sharing, WebView, permissions,
+          preferences, secure storage, and URL launching. The current project
+          dependencies do not include an advertising or analytics SDK, account
+          system, or Nexus Bridge-operated cloud service. No app telemetry
+          endpoint was identified in the project source audit. When you choose
+          an FTP/FTPS destination, share a file with another app, open the
+          optional MUSHROOM BUILD Instagram link, or use another platform
+          service, information is handled by that destination or service under
+          its own privacy practices. Review the exact release dependencies and
+          platform behavior when completing Google Play Data safety
+          disclosures.
+        </p>
+      </section>
+
+      <section>
+        <h2>Permissions and your choices</h2>
+        <p>
+          Storage access supports file management and publishing selected
+          files; camera access supports QR scanning. Nearby Wi-Fi permission on
+          recent Android versions, location permission on older Android
+          versions, and network permissions support local discovery and
+          hotspot connections. Notifications support foreground server status.
+          You can decline optional permissions; dependent features will not
+          work, while unrelated
+          features remain available. Stop a server or transfer to end its
+          network availability. Delete saved files using a file manager. The
+          app has no user accounts or account-deletion workflow.
+        </p>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>
+          Nexus Bridge does not ask for a user’s age or provide child accounts.
+          Its intended age and target-audience classification are set
+          separately by the developer in Google Play Console; this policy does
+          not make a child-directed-use determination. The developer must
+          review any additional requirements before selecting children as a
+          target audience.
+        </p>
+      </section>
+
+      <section>
+        <h2>Developer and privacy contact</h2>
+        <div class="contact">
+          <p><strong>Developer:</strong> MUSHROOM BUILD</p>
+          <p>
+            <strong>Privacy contact:</strong>
+            <a href="mailto:mushroombuild@gmail.com">mushroombuild@gmail.com</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Nexus Bridge is the product. MUSHROOM BUILD is its developer.
+    </footer>
+  </body>
+</html>
